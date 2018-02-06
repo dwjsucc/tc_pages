@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>时间设置</title>
+    <!--<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="../css/timecontrol/timecontrol.css" />
+    <script type="text/javascript" src="../js/timecontrol/excel.js" ></script>
+    <link rel="stylesheet" href="../css/timecontrol/qinmiset.css" />
+    <script type="text/javascript" src="./jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>-->
+    <%= stylesheet_link_tag "/bootstrap/css/bootstrap.min.css" %>
+    <%= stylesheet_link_tag "bootstrap-datetimepicker.min.css" %> 
+    <%= stylesheet_link_tag "timecontrol/timecontrol.css" %> 
+    <%= stylesheet_link_tag "timecontrol/qinmiset.css" %> 
+    <%= javascript_include_tag "timecontrol/excel.js" %>
+    <%= javascript_include_tag "jquery-1.8.3.min.js" %>
+        <%= javascript_include_tag "bootstrap/bootstrap.min.js" %>
+    <%= javascript_include_tag "bootstrap-datetimepicker.js" %>
+        <%= javascript_include_tag "locales/bootstrap-datetimepicker.fr.js" %>
+    <%= javascript_include_tag "jquery-1.7.2.min.js" %>
+    
+</head>
+<style type="text/css">
+	body,p,ul{margin:0;padding:0}
+	ul{list-style:none;}
+	a{text-decoration: none;}
+	h4{
+		background-color: #419641;
+		padding-left: 10px;
+		line-height: 50px;
+		margin-top: 20px;
+		font-size: 20px;
+		width:0px;
+		height: 50px;
+		color: white;
+		white-space:nowrap; 
+		overflow:hidden; 
+		transition: 2s;
+	}
+	.h4-1{
+		margin-top: 20px;
+		font-size: 20px;
+		width:100%;
+		height: 50px;
+		white-space:nowrap; 
+	    transition:2s;
+	}
+	table{
+		width:100%;
+		overflow-x: scroll;
+	}
+	table td{
+		width:100px;
+		max-width: 100px;
+		font-size: 18px;;
+	}
+	.description
+	{
+		font-family: "微软雅黑";
+		font-size: 18px;
+		color:cornflowerblue;
+		padding: 10px;;
+	}
+	.but{
+		position: absolute;
+		right:13px;
+		width:100px;
+		height: 40px;
+		text-align: center;
+		padding: 10px;
+		background-color: #3C763D;
+		color: white;
+	}
+</style>
+<body>
+<div class="container" style="position: relative;">
+    <h4>零星的时间，如果能敏捷地加以利用，可成为完整的时间。所谓“积土成山”是也，失去一日甚易，欲得回已无途。 —— 卡耐基</h4>
+    <p class="description">该时间设置系统目前只针对国科大学生，时间设置安排是按照国科大学生上课时间进行的，所以请您按照自己的时间课程计划进行填写，方便我们为您进行时间处理。</p>
+    <p class="description">时间课程安排表</p>
+    <table class="table table-bordered table-hover table-striped">
+    	<thead>
+    		<tr class="titie-table">
+    		  	<td>时间/日期</td>
+    		 	<td>周一</td>
+    		  	<td>周二</td>
+    		  	<td>周三</td>
+    		  	<td>周四</td>
+    		  	<td>周五</td>
+    		  	<td>周六</td>
+    		  	<td>周日</td>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+    		  	<td>8:30-9:20</td>
+    		 	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		</tr>
+    		<tr>
+    		  	<td>9:20-10:10</td>
+    		 	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		</tr>
+    		<tr>
+    		  	<td>10:30-11:10</td>
+    		 	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		</tr>
+    		<tr>
+    		  	<td>11:30-12:10</td>
+    		 	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		</tr>
+    		<tr>
+    		  	<td>14:30-15:10</td>
+    		 	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		</tr>
+    		<tr>
+    		  	<td>15:30-16:10</td>
+    		 	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		</tr>
+    		<tr>
+    		  	<td>16:30-17:10</td>
+    		 	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		</tr>
+    		<tr>
+    		  	<td>7:00-9:40</td>
+    		 	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		</tr>
+    	</tbody>
+    </table>
+     <button class="but">提交</button>
+</div>
+
+<!--<script type="text/javascript" src="./jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="../js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>-->
+<script type="text/javascript">
+	window.onload = Init;//网页加载完成时，调用init
+	//设置定时器，图片轮播显示
+	function Init()
+    {
+        //定时器,每秒钟触发ShowPicturesInOrder()函数
+        window.setInterval("ShowPicturesInOrder()", 3000);
+    }
+
+    var Num = 0;
+    function ShowPicturesInOrder()
+    {
+    	if(Num%2==0)
+    	{
+    		console.log("开始");
+        	//获取网页中id=myImg的图片对象元素
+        	$("h4").addClass("h4-1");
+    	}
+        else
+        {
+        	$("h4").removeClass("h4-1");
+        }
+        Num++;
+    }
+</script>
+
+</body>
+</html>

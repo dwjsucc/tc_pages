@@ -1,0 +1,2 @@
+module QinmisetsHelper
+end

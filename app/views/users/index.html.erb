@@ -1,0 +1,57 @@
+<% content_for :head do %>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <%= stylesheet_link_tag "common" %>
+    <%= stylesheet_link_tag "bootstrap" %>    
+    <%= stylesheet_link_tag "bootstrap.min" %> 
+    <%= stylesheet_link_tag "index" %> 
+    <%= stylesheet_link_tag "bangding" %>
+    <%= javascript_include_tag "jquery-1.12.1.min" %>
+    <%= javascript_include_tag "bootstrap.min" %>
+    <%= javascript_include_tag "index" %>
+    <%= javascript_include_tag "jianplaceholder" %>
+<% end %>
+<body>
+    <div class="mylogin">
+        <div class="logininfo">
+            <div class="login1">
+                <div class="login1-left">账户登录</div>
+                <div class="login1-right">还没有账户？
+                <%= link_to "立即注册", regist1s_path %>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <ul class="login2">
+                <li class="login2-li">
+                    <label for="">
+                        <img src="/assets/user.png"  alt=""/>
+                        <input type="text" class="user_name"/>
+                    </label>
+                </li>
+                <li class="login2-li">
+                    <label for="">
+                        <img  src="/assets/password.png" alt=""/>
+                        <input type="password" class="user_password"/>
+                    </label>
+                </li>
+                <li class="login2-li">
+                    <button ng-click="login_click()">登录</button>
+                </li>
+                <li class="login2-li">
+                                              使用第三方账号登录
+                </li>
+                <li class="login2-li">
+                    <div class="login2-li-div"><img src="/assets/weibo.png" alt=""/>新浪微博登录</div>
+                    <div class="login2-li-div"><img src="/assets/tengxun.png" alt=""/>腾讯QQ登录</div>
+                    <div class="login2-li-div login2-li-div-zai"><img src="/assets/weixin.png" alt=""/>微信登录</div>
+                </li>
+                <li class="clear"></li>
+                <li class="login2-li" style="margin-top:40px">
+                    <div class="convenient"><a href="/bjlogins">便捷登录</a></div>
+                    <div class="forget"><a href="/searchpasswords">忘记密码?</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+

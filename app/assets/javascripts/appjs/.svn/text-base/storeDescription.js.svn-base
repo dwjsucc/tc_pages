@@ -1,0 +1,31 @@
+
+var storeDescriptionapp = angular.module('storeDescription',['CommonApp']);
+storeDescriptionapp.controller('storeDescriptioncontroller', function ($scope,$http,URLParam) {
+    var objid=URLParam.getParams();
+    $http({
+        url: wenhuaju + '/goods' ,
+        method: 'POST',
+        params: {
+            'id':53
+        }
+    }).success(function (response) {
+        $scope.goodsName = response.data;
+        $scope.coverImgUrl = response.data.coverImgUrl;
+        $scope.minOriginalPrice = response.data.minOriginalPrice;
+        $scope.minUsePoint = response.data.minUsePoint;
+        $scope.minGoodsPoint = response.data.minGoodsPoint;
+        $scope.pointCanBuy = response.data.pointCanBuy;
+        $scope.minCurrentPrice = response.data.minCurrentPrice;
+        $scope.goodsDetail = response.data.goodsDetail;
+        $scope.goodsIntro = response.data.goodsIntro;
+        $scope.specificationList = response.data.specificationList;
+
+        $('.testBuy').attr('href','buygoods.html#'+$scope.goodsName.id);
+
+        $scope.buy = function (id) {
+            var buy_Id = id;
+            $('.testBuy').attr('href','buygoods.html#'+$scope.goodsName.id+buy_Id);
+        };
+
+    });
+});

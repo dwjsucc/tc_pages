@@ -1,0 +1,17 @@
+<%= form_for(@searchpassword) do |f| %>
+  <% if @searchpassword.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@searchpassword.errors.count, "error") %> prohibited this searchpassword from being saved:</h2>
+
+      <ul>
+      <% @searchpassword.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

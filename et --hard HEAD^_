@@ -1,0 +1,42 @@
+[33mcommit 4dfcc0f9fba0885e878ccc078b2852d0a522fb2e[m[33m ([m[1;36mHEAD -> [m[1;32mdwj[m[33m)[m
+Author: duweijing <dwjsucc@126.com>
+Date:   Thu Jan 11 09:16:41 2018 +0000
+
+    first_user
+
+[33mcommit 08bed161e996a1b07d5654e7938f58d97285a807[m
+Author: duweijing <dwjsucc@126.com>
+Date:   Tue Jan 9 10:51:59 2018 +0000
+
+    test
+
+[33mcommit d08f0063d7c64a153367597fe743d99dea52e378[m
+Author: duweijing <dwjsucc@126.com>
+Date:   Tue Jan 9 04:59:25 2018 +0000
+
+    test
+
+[33mcommit 9c5f0a06a4417fd5639d5e7a6e5fcc1ca3dbf805[m
+Author: duweijing <dwjsucc@126.com>
+Date:   Mon Jan 8 11:17:15 2018 +0000
+
+    test
+
+[33mcommit 07f3cf0b5c229599e1e991f2972d3c897abd3f4a[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/develop[m[33m, [m[1;32mmaster[m[33m, [m[1;32mdevelop[m[33m)[m
+Merge: 7438281 f353fe1
+Author: Monokaix <2536818783@qq.com>
+Date:   Sat Jan 6 06:05:43 2018 +0000
+
+    Merge branch 'master' of github.com:Monokaix/TimeControl
+
+[33mcommit 74382817899d2939752e0acae3257b6e7d7da810[m
+Author: Monokaix <2536818783@qq.com>
+Date:   Sat Jan 6 05:59:15 2018 +0000
+
+    new
+
+[33mcommit f353fe1f6f9468577161cb2ef8c6c6a2a8bc8f6b[m
+Author: 紫陌红尘 <2536818783@qq.com>
+Date:   Sat Jan 6 13:51:45 2018 +0800
+
+    Initial commit

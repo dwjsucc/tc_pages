@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>TimeControl</title>
+  <!--  <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/culture.css">
+    <script src="./js/jquery-1.12.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/jianplaceholder.js"></script>
+    <script src="./js/jquery-1.7.2.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="js/appjs/layout.js" ></script>
+
+<script type="text/javascript" src="js/angular-1.5.8.js" ></script>
+
+	
+<script type="text/javascript" src="js/appjs/index.js" ></script>
+<script type="text/javascript" src="js/appjs/indexmid.js" ></script>-->
+    
+     <%= stylesheet_link_tag "common" %>
+    <%= stylesheet_link_tag "bootstrap.min" %> 
+    <%= stylesheet_link_tag "index" %> 
+    <%= stylesheet_link_tag "culture" %>
+    <%= javascript_include_tag "jquery-1.12.1.min" %>
+    <%= javascript_include_tag "bootstrap.min" %>
+    <%= javascript_include_tag "index" %>
+    <%= javascript_include_tag "jianplaceholder" %>
+    <%= javascript_include_tag "script.js" %>
+    <%= javascript_include_tag "appjs/layout.js" %>
+    <%= javascript_include_tag "angular-1.5.8.js" %>
+    <%= javascript_include_tag "appjs/index.js" %>
+    <%= javascript_include_tag "appjs/indexmid" %>
+</head>
+<body ng-app="index" ng-controller="indexcontroller">
+    <div class="mymidcon">
+        <div class="slidepicture">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active"><img class="Img" src="/assets/TimeControl/lunbo1.png" alt=""></div>
+                    <div class="item"><img class="Img" src="/assets/TimeControl/lunbo2.jpg" alt=""></div>
+                    <div class="item"><img class="Img" src="/assets/TimeControl/lunbo3.jpg" alt=""></div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+            </div>
+        </div>
+        <div class="navtool">
+            <ul class="navicon">
+                <li class="navicon1">
+                    <a href="store.html">
+                        <div><img src="/assets/index/9.png" alt=""/></div>
+                        <b>时间安排</b>
+                        <!--<span>积分兑换区，<br/>部分商品可以用积分进行兑换等</span>-->
+                    </a>
+                </li>
+                <li class="navicon2" id="navicon2">
+                    <a href="dramabuy.html">
+                        <div><img src="/assets/index/10.png" alt=""/></div>
+                        <b>亲密设置</b>
+                        <!--<span>景点票、场馆票、<br/>热门票务展示等</span>-->
+                    </a>
+                </li>
+                <li class="navicon3">
+                    <a href="personal.html">
+                        <div><img src="/assets/index/11.png" alt=""/></div>
+                        <b>团队建设</b>
+                        <!--<span>交易订单 ，查询钱包明细，<br/>兑换记录，查询全部优惠券等</span>-->
+                    </a>
+                </li>
+                <li class="navicon4">
+                    <a href="business.html">
+                        <div><img src="/assets/index/12.png" alt=""/></div>
+                        <b>登录</b>
+                       <!-- <span>商家名称、地理位置、<br/>基础介绍、主营商品等</span>-->
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="aggressively aggbg">
+            <div class="agg">
+                <div class="aggtitle">
+                    <b>名人名言</b><span>FAMOUS SAYINGS</span>
+                </div>
+               <!-- <button onclick="window.location.href('dramabuy.html')"><a href="dramabuy.html">MORE&nbsp;&nbsp;>></a></button>-->
+            </div>
+            <div class="clear"></div>
+           <!-- <ul class="aggnav">
+                <li class="aggnavitem navbg1">戏剧</li>
+                <li class="aggnavitem">话剧</li>
+                <li class="aggnavitem">歌剧</li>
+                <li class="aggnavitem">舞蹈</li>
+                <li class="aggnavitem">亲子</li>
+            </ul>-->
+            <div class="content" id="contentheight">
+                <div class="drama-poster"  id="posterheight">
+                    <ul id="ulheight">
+                        <li class="show-poster-3 timecontrol_img" id="imgheight">
+                            <a href="moviedes.html" class="img">
+                                <img original="/assets/1.jpg" src="/assets/TimeControl/famous-sayings1.jpg" style="height: 250px;"/>
+                                <div class="piccover">
+                                    <div class="piccoverdiv">
+                                        <b>时间乃是最大的革新家</b>
+                                        <span>作者：培根</span>
+                                        <span>地区：美国</span>
+                                       <!-- <span>片长：129</span>-->
+                                        <button>查看详情</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="show-poster-3 current timecontrol_img">
+                            <a href="moviedes.html" class="img">
+                                <img original="/assets/2.jpg" src="/assets/TimeControl/famous-sayings2.jpg" style="height: 250px;"/>
+                                <div class="piccover">
+                                    <div class="piccoverdiv">
+                                        <b>时间乃是最大的革新家</b>
+                                        <span>作者：培根</span>
+                                        <span>地区：美国</span>
+                                       <!-- <span>片长：129</span>-->
+                                        <button>查看详情</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="show-poster-3 timecontrol_img">
+                            <a href="moviedes.html" class="img">
+                                <img original="/assets/3.jpg" src="/assets/TimeControl/famous-sayings3.jpg" style="height: 250px;"/>
+                                <div class="piccover">
+                                    <div class="piccoverdiv">
+                                        <b>时间乃是最大的革新家</b>
+                                        <span>作者：培根</span>
+                                        <span>地区：美国</span>
+                                       <!-- <span>片长：129</span>-->
+                                        <button>查看详情</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="show-poster-3 timecontrol_img">
+                            <a href="moviedes.html" class="img">
+                                <img original="/assets/4.jpg" src="/assets/TimeControl/famous-sayings5.jpg" style="height: 250px;"/>
+                                <div class="piccover">
+                                    <div class="piccoverdiv">
+                                        <b>时间乃是最大的革新家</b>
+                                        <span>作者：培根</span>
+                                        <span>地区：美国</span>
+                                       <!-- <span>片长：129</span>-->
+                                        <button>查看详情</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="show-poster-3 timecontrol_img">
+                            <a href="moviedes.html" class="img">
+                                <img original="/assets/5.jpg" src="/assets/TimeControl/famous-saying4.jpg" style="height: 250px;"/>
+                                <div class="piccover">
+                                    <div class="piccoverdiv">
+                                        <b>时间乃是最大的革新家</b>
+                                        <span>作者：培根</span>
+                                        <span>地区：美国</span>
+                                       <!-- <span>片长：129</span>-->
+                                        <button>查看详情</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="drama-slide">
+                    <li class="prev" id="prev">
+                        <a href="javascript:void(null)" title="上翻">
+                            <img src="/assets/leftbtn.png" alt=""/>
+                        </a>
+                    </li>
+                    <li class="next" id="next">
+                        <a href="javascript:void(null)" title="下翻">
+                            <img src="/assets/rightbtn.png" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+       </div>
+        <div class="clear"></div>
+        <!--<div class="aggressively">
+            <div class="agg">
+                <div class="aggtitle">
+                    <b id="bb">文化指南</b><span>CULTURE FINGERPOT</span>
+                </div>
+                <button onclick="window.location.href('culcompass.html')"><a href="culcompass.html">MORE&nbsp;&nbsp;>></a></button>
+            </div>
+            <ul class="culpicture">
+                <li class="culkuan"><div><img src="images/index/31.png" alt=""/></div></li>
+                <li class="culzai"><div><a href="culcompassDes.html"><img src="images/index/26.png" alt=""/></a></div></li>
+                <li class="culzai"><div><a href="culcompassDes.html"><img src="images/index/26.png" alt=""/></a></div></li>
+                <li class="culzai"><div><a href="culcompassDes.html"><img src="images/index/26.png" alt=""/></a></div></li>
+            </ul>
+        </div>-->
+        <!--<div class="clear"></div>
+        <div class="aggressively aggbg">
+            <div class="agg">
+                <div class="aggtitle">
+                    <b>文化咨讯</b><span>CULTURE INQUIR</span>
+                </div>
+                <button onclick="window.location.href('cultureadvisory.html')"><a href="cultureadvisory.html">MORE&nbsp;&nbsp;>></a></button>
+            </div>
+            <div class="inqpicture">
+                <div class="inqitem-left" id="inqleftheight">
+                    <div><a href="cultureadvisorydetail.html"><img src="images/index/35.png" alt=""/></a></div>
+                </div>
+                <div class="inqitem-center" id="inqcenterheight">
+                    <a href="cultureadvisorydetail.html"><img id="shangimg" src="images/index/36.png" alt=""/></a>
+                    <a href="cultureadvisorydetail.html"><img id="xi																								aimg" src="images/index/36.png" alt=""/></a>
+                </div>
+                <div class="inqitem-right" id="inqrightheight">
+                    <ul class="inqul">
+                        <li><a href="cultureadvisorydetail.html">武清区上马台镇举办文艺汇演活动 丰富百姓文化生活</a></li>
+                        <li><a href="cultureadvisorydetail.html">武清文化公园正月初七将举办足球趣味射门比赛活动!欢迎大家踊跃...</a></li>
+                        <li><a href="cultureadvisorydetail.html">武清区举办2017迎新春文艺晚会 市民享文化盛宴</a></li>
+                        <li><a href="cultureadvisorydetail.html">武清区春节文化活动真正惠及民心</a></li>
+                        <li><a href="cultureadvisorydetail.html">北京通州天津武清河北廊坊联手发展公共服务</a></li>
+                        <li><a href="cultureadvisorydetail.html">大运河武清段部分通航</a></li>
+                        <li><a href="cultureadvisorydetail.html">天津武清区南湖·绿博园景区5月1日盛装开园</a></li>
+                        <li class="nomargin"><a href="cultureadvisorydetail.html">天津武清区加快发展现代服务业 打造京津卫星城</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><-->						</-->
+    </div>
+</body>
+
+<script>
+    $(function(){
+        /*****************图片切换处的高度及按钮******************/
+        var imgheight=$("#imgheight").height()+'px';
+//      alert(imgheight);
+        $("#ulheight").css({"height":imgheight,"overflow":"hidden"});
+        var contentheight=$("#contentheight").height();
+        var prevtop=(contentheight-123)/2+'px';
+        $("#prev").css({"top":prevtop});
+        $("#next").css({"top":prevtop});
+        /***************文化咨询处图片对齐*****************/
+        var inqleftheight=$("#inqleftheight").height()+'px';
+        /*alert(inqleftheight);*/
+        $("#inqcenterheight").css({"height":inqleftheight});
+        $("#inqrightheight").css({"height":inqleftheight});
+        /*var inqcenterheight=$("#inqcenterheight").height()+'px';
+        alert(inqcenterheight);
+        var inqrightheight=$("#inqrightheight").height()+'px';
+        alert(inqrightheight);*/
+        $("#xiaimg").css({"bottom":0});
+
+        var inqullis=$("li",$(".inqul"));
+        var inqullisL=inqullis.length;
+        var inqulliMB=(parseInt(inqleftheight)-inqullisL*26)/inqullisL+'px';
+        inqullis.css({"marginBottom":inqulliMB});
+//        alert(inqulliMB);
+
+
+        var piccovers=$(".piccover");
+        var showposter3=$(".show-poster-3");
+        showposter3.hover(function(){
+            var index = showposter3.index(this);
+            $(piccovers[index]).animate({
+                height:"100%"
+            },500);
+        },function(){
+            piccovers.animate({
+                height:"0"
+            },100);
+        });
+        var piccoverdivs=$(".piccoverdiv");
+        var showposter3height=showposter3.height();
+        var showposter3width=showposter3.width();
+        var piccoverdivheight=piccoverdivs.height();
+        var piccoverdivwidth=piccoverdivs.width();
+        var piccoverdivleft=(showposter3width-piccoverdivwidth)/2+'px';
+        var piccoverdivtop=(showposter3height-piccoverdivheight)/2+'px';
+        piccoverdivs.css({"marginTop":piccoverdivtop,"marginLeft":piccoverdivleft});
+
+    });
+</script>
+<script type="text/javascript">
+    window.onload = function(){
+        var getEle = document.getElementsByClassName("Img");
+        var getEle_div = document.getElementsByClassName("item");
+        for(var i=0;i<getEle.length;i++){
+            getEle[i].style["max-width"] = getEle_div[0].offsetWidth + "px";
+            getEle[i].style["max-height"] = getEle_div[0].offsetHeight + "px";
+        }
+    }
+</script>
+</html>
+<!--<li class="show-poster-3" id="imgheight" >
+                        <a href="moviedes.html?id={{content[0].id}}" class="img">
+                            <img original="{{content[0].img}}" src="{{content[0].img}}" />
+                            <div class="piccover">
+                                <div class="piccoverdiv">
+                                    <b ng-bind="content[0].nm">神奇动物在哪里</b>
+                                    <span >导演：<span ng-bind="content[0].dir" style="display: inline-block;"></span></span>
+                                    <span >类型：<span ng-bind="content[0].cat" style="display: inline-block;"></span></span>
+                                    <span >片长：<span ng-bind="content[0].dur" style="display: inline-block;"></span></span>
+                                    <button>查看详情</button>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="show-poster-3 current" ng-repeat="movie1 in movie" repeat-finish>
+                        <a href="moviedes.html?id={{movie1.id}}" class="img">
+                            <img original="images/2.jpg" src="{{movie1.img}}" />
+                            <div class="piccover">
+                                <div class="piccoverdiv">
+                                    <b ng-bind="movie1.nm">神奇动物在哪里</b>
+                                    <span >导演：<span ng-bind="movie1.dir" style="display: inline-block;"></span></span>
+                                    <span >类型：<span ng-bind="movie1.cat" style="display: inline-block;"></span></span>
+                                    <span >片长：<span ng-bind="movie1.dur" style="display: inline-block;"></span></span>
+                                    <button>查看详情</button>
+                                </div>
+                            </div>
+                        </a>
+                    </li>-->

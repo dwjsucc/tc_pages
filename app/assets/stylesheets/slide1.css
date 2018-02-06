@@ -1,0 +1,63 @@
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+a:hover {
+	color: #1974A1;
+}
+
+
+.picFocus {
+	margin: 0 auto;
+	width: 100%;
+	/*border: 1px solid #ccc;*/
+	/*padding: 5px;*/
+	position: relative;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.picFocus .hd1 {
+	width: 532px;
+	padding-top: 5px;
+	overflow: hidden;
+}
+
+.picFocus .hd1 ul {
+	margin-right: -5px;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.picFocus .hd1 ul li {
+	padding-top: 5px;
+	float: left;
+	text-align: center;
+}
+
+.picFocus .hd1 ul li img {
+	width: 115px;
+	/*height: 65px;*/
+	/*border: 2px solid #ddd;*/
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.picFocus .hd ul li.on {
+	background: url("images/icoUp.gif") no-repeat center 0;
+}
+
+.picFocus .hd ul li.on img {
+	border-color: #f60;
+}
+
+.picFocus .bd1 li {
+	vertical-align: middle;
+}
+
+.picFocus .bd1 img {
+	width: 532px;
+	height: auto;
+	display: block;
+}

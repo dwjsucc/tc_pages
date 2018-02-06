@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>亲密设置</title>
+	<!--	<link rel="stylesheet" href="sample in bootstrap v3/bootstrap/css/bootstrap-theme.css" />
+		<link rel="stylesheet" href="sample in bootstrap v3/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="sample in bootstrap v3/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="sample in bootstrap v3/bootstrap/css/bootstrap.min.css" />
+		<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    	<link rel="stylesheet" href="../css/timecontrol/timecontrol.css" />
+    	<link rel="stylesheet" href="css/timecontrol/qinmiset.css" />
+    	<script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>-->
+    	
+    <%= stylesheet_link_tag "bootstrap/bootstrap-theme.css" %>
+    <%= stylesheet_link_tag "bootstrap/bootstrap-theme.min.css" %> 
+    <%= stylesheet_link_tag "bootstrap.css" %> 
+    <%= stylesheet_link_tag "bootstrap.min.css" %> 
+    <%= stylesheet_link_tag "timecontrol/timecontrol.css" %>
+    <%= stylesheet_link_tag "timecontrol/qinmiset.css" %>
+    <%= javascript_include_tag "jquery-1.12.1.min" %>
+    <%= javascript_include_tag "jquery-1.7.2.min.js" %>
+   
+	</head>
+	<style type="text/css">
+		
+	</style>
+	<body class="qinmi">
+		<div class="box-1 left">
+			<ul class="process">
+				<li class="li-1">
+					<img id="myImg" class="img-1" src="/assets/TimeControl/famous-sayings1.jpg" />
+				</li>
+				<li class="li-2">
+					<img class="img-2" src="/assets/TimeControl/famous-sayings3.jpg" />
+				</li>
+				<li class="li-2">
+					<img class="img-2" src="/assets/TimeControl/famous-sayings5.jpg" />
+				</li>
+				<li class="li-2">
+					<img class="img-2" src="/assets/TimeControl/famous-saying4.jpg" />
+				</li>
+				<li class="li-2">
+					<img class="img-2" src="/assets/TimeControl/lunbo1.png" />
+				</li>
+				<li class="li-2">
+					<img class="img-2" src="/assets/TimeControl/lunbo2.jpg" />
+				</li>
+				<li class="li-2">
+					<img class="img-2" src="/assets/TimeControl/time.jpg" />
+				</li>
+			</ul>
+	  </div>
+		<div class="right">
+			<p class="ability">功能简介</p>
+			<p>该模块可以设置亲密好友，步骤如下：</p>
+			<ul >
+				<li>在输入框中填写对方的昵称或者手机号</li>
+				<li>点击搜索按钮，进行搜索</li>
+				<li>如果该用户没有注册账号或者注册账号没有进行时间设置，会返回添加失败</li>
+				<li>否则系统会自动向用户发送亲密好友请求，等待对方同意</li>
+				<li>添加亲密好友成功之后，系统会自动将两人时间进行合并，进行空余时间显示</li>
+			</ul>
+		</div>
+		<p style="clear: both;"></p>
+		<div class="input-1">
+			<p class="search">添加亲密好友</p>
+			<input type="text" name="name" placeholder="请输入对方昵称或手机号" value="" />
+			<button class="but-search">搜索</button>
+		</div>
+		<table class="table table-bordered table-hover table-striped">
+    	<thead>
+    		<tr class="titie-table">
+    		  	<td>时间/日期</td>
+    		 	<td>周一</td>
+    		  	<td>周二</td>
+    		  	<td>周三</td>
+    		  	<td>周四</td>
+    		  	<td>周五</td>
+    		  	<td>周六</td>
+    		  	<td>周日</td>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+    		  	<td>8:30-9:20</td>
+    		 	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		</tr>
+    		<tr>
+    		  	<td>9:20-10:10</td>
+    		 	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		</tr>
+    		<tr>
+    		  	<td>10:30-11:10</td>
+    		 	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		</tr>
+    		<tr>
+    		  	<td>11:30-12:10</td>
+    		 	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		</tr>
+    		<tr>
+    		  	<td>14:30-15:10</td>
+    		 	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		</tr>
+    		<tr>
+    		  	<td>15:30-16:10</td>
+    		 	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		</tr>
+    		<tr>
+    		  	<td>16:30-17:10</td>
+    		 	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		</tr>
+    		<tr>
+    		  	<td>7:00-9:40</td>
+    		 	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		  	<td contentEditable="true"></td>
+    		</tr>
+    	</tbody>
+    </table>
+	</body>
+	<script>
+		$(".li-2").hover(function(){
+		console.log("1223");
+		var imgurl = $(this).find("img").attr("src");
+		console.log(imgurl);
+		$(".li-1").find("img").attr("src",imgurl);
+		},function(){
+			$(".li-1").find("img").attr("src","/assets/TimeControl/famous-sayings3.jpg");
+		})
+		window.onload = Init;//网页加载完成时，调用init
+		//设置定时器，图片轮播显示
+		function Init()
+         {
+            //定时器,每秒钟触发ShowPicturesInOrder()函数
+            window.setInterval("ShowPicturesInOrder()", 3000);
+        }
+
+        var teacherNum = 0;
+        function ShowPicturesInOrder()
+         {
+         	console.log("开始");
+             //获取网页中id=myImg的图片对象元素
+             var imgObj = document.getElementById("myImg");
+             /*imgObj.src = $("li").eq(teacherNum).find("img").src;
+             console.log("ssssssss");
+             console.log(imgObj.src);*/
+            imgObj.src = "/assets/TimeControl/famous-sayings" + teacherNum + ".jpg";
+             teacherNum++;
+           //总共有4张图片，显示第四张图片时，teacherNum=4
+            //第四张图片显示后，执行teacherNum++,teacherNum=5
+            if (teacherNum==4)
+             {
+                 teacherNum = 0;//回到了原点
+            }
+         }
+	</script>
+</html>

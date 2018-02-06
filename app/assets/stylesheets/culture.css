@@ -1,0 +1,298 @@
+/*************�Ļ��̼�********************/
+.businesscon{
+    width:80%;
+    margin: auto;
+    margin-top:30px;
+    overflow: hidden;
+}
+.businesscon-sort{
+    width: 100%;
+    height: 53px;
+    border:1px solid #DDDDDD;
+    margin-bottom: 20px;
+}
+.sortitem{
+    height: 52px;
+    float: left;
+    line-height: 52px;
+    font-size: 18px;
+    margin-right:80px;
+}
+.businesscon-sort .clk{
+    cursor: pointer;
+}
+.businesscon-sort .all{
+    cursor: pointer;
+}
+.bg-sortitem{
+    width: 221px;
+    background: url("../images/sort.png") no-repeat;
+    color: white;
+    text-align: center;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+.businesscon-search input{
+    width:240px;
+    height: 36px;
+    line-height: 36px;
+    border:1px solid #DDDDDD;
+    vertical-align: middle;
+    outline: none;
+    padding-left: 10px;
+}
+.businesscon-search img{
+    width: 45px;
+    height: 36px;
+    margin-left: -8px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.businesscon-search span{
+    height: 34px;
+    line-height: 34px;
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 14px;
+}
+.businesscon-search b{
+    height: 34px;
+    line-height: 34px;
+    display: inline-block;
+    margin-left:4px;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+    color: red;
+}
+.businesscon-picture{
+    width: 103.1%;
+    margin-top:30px;
+}
+.picitem{
+    width: 22%;
+    float: left;
+    margin-right:3%;
+    margin-bottom:20px;
+    cursor: pointer;
+    position: relative;
+}
+.picitem img{
+    width: 100%;
+    height: 220px;
+}
+.picitem .list_img{
+    width: 100%;
+    height: 220px;
+}
+
+.piccover{
+    position: absolute;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    height:0;
+    background: black;
+    background:rgba(0,0,0,0.5);
+    filter:alpha(opacity=50);
+    color: white;
+}
+.piccoverdiv{
+    display: inline-block;
+}
+.piccoverdiv b{
+    display: block;
+    font-size: 16px;
+}
+.piccoverdiv span{
+    display: block;
+    font-size: 14px;
+    margin-top:8px;
+}
+.piccoverdiv button{
+    display: block;
+    font-size: 14px;
+    margin-top:8px;
+    background: #009DD9;
+    border:1px solid #009DD9;
+    width:100px;
+    height: 28px;
+    outline: none;
+}
+.businesscon-page{
+    width: 100%;
+    margin-top: 30px;
+}
+.businesscon-page ul{
+    width:322px;
+    margin: auto;
+}
+.businesscon-page ul li{
+    float: left;
+    width: 30px;
+    height: 30px;
+    /*background: #DDDDDD;*/
+    margin: 0 8px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+}
+.leftpage,.rightpage{
+    font-size:26px;
+    color: white;
+}
+/*************�Ļ��̼�����********************/
+.busdetail{
+    width: 100%;
+    position: relative;
+}
+.busdetail-left{
+    width:45%;
+    float: left;
+}
+.busdetail-left img{
+    width: 100%;
+}
+.busdetail-right{
+    width:55%;
+    float: left;
+    padding-left:100px;
+}
+.busdetail-right b{
+     font-weight: normal;
+     font-size:20px;
+     display: block;
+    margin-bottom: 30px;
+}
+.busdetail-right span{
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+.busdetail-right .arttitle{
+    margin-top: 0px;
+}
+.coupontitle,.showcasetitle{
+    width: 100%;
+    height: 40px;
+    border-bottom:1px solid #DDDDDD;
+}
+.coupontitle1{
+    margin-top: 20px;
+}
+.coupontitle b,.showcasetitle b{
+    display:block;
+    width:6px;
+    height: 30px;
+    background: #2CA6DF;
+    margin-top: 5px;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+.coupontitle span,.showcasetitle span{
+    display:block;
+    line-height:30px;
+    margin: 5px 0 0 20px;
+    float: left;
+    font-size: 18px;
+}
+.couponpicture{
+    overflow: hidden;
+    width:84%;
+    margin: auto;
+}
+.coupic{
+    width:20%;
+    margin:30px 2.5%;
+    height:100%;
+    background: url("../images/coupon.jpg") no-repeat;
+    background-size: 100%;
+    color: white;
+    float: left;
+}
+.coupic1{
+    width: 90%;
+    height:18%;
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+    border-bottom: 1px dashed #C81F24;
+    font-size: 16px;
+    display: table;
+}
+.coupic1 span{
+    display: table-cell;
+    vertical-align:middle;
+}
+.coupic2{
+    padding:2% 0 0 6%;
+    font-size: 14px;
+}
+.coupic2 span{
+    display: block;
+    margin:7px 0;
+}
+.font18{
+    font-size: 18px;
+}
+.font12{
+    font-size: 12px;
+}
+.showpic img{
+    width: 100%;
+}
+.showcaseinfo{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px;
+}
+.showcasebtn{
+    width: 10%;
+    float: left;
+}
+.showcasepicture{
+    width:80%;
+    float: left;
+    overflow: hidden;
+}
+.showpic{
+    width:20%;
+    float: left;
+    margin: 2.5%;
+}
+.leftbtn,.rightbtn{
+    width:60px;
+    height:123px;
+}
+.rightbtn{
+    float: right;
+}
+.desciption-con p{
+    text-indent:2em;
+    margin-top: 25px;
+    font-size: 16px;
+}
+/******************文化会员商城******************/
+.renqigaodi{
+    border:1px solid #DDDDDD;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    vertical-align: middle;
+    margin-left:33px;
+    width:190px;
+}
+.renqigaodi span{
+    margin-left:30px;
+}
+
+.item{
+    width: 100%;
+    height: 390px;
+}
+.item img {
+    width: 100%;
+}

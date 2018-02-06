@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>团队建设</title>
+	<!--	<link rel="stylesheet" href="sample in bootstrap v3/bootstrap/css/bootstrap-theme.css" />
+		<link rel="stylesheet" href="sample in bootstrap v3/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="sample in bootstrap v3/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="sample in bootstrap v3/bootstrap/css/bootstrap.min.css" />
+		<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    	<link rel="stylesheet" href="../css/timecontrol/timecontrol.css" />
+    	<link rel="stylesheet" href="css/timecontrol/qinmiset.css" />
+    	<script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>
+    	<link rel="stylesheet" href="css/timecontrol/teamset.css" />
+    	-->
+    <%= stylesheet_link_tag "bootstrap/bootstrap-theme.css" %>
+    <%= stylesheet_link_tag "bootstrap/bootstrap-theme.min.css" %> 
+    <%= stylesheet_link_tag "bootstrap/bootstrap.css" %> 
+    <%= stylesheet_link_tag "bootstrap/bootstrap.min.css" %>
+    <%= stylesheet_link_tag "timecontrol/timecontrol.css" %>
+    <%= javascript_include_tag "timecontrol/timecontrol.css" %>
+    <%= javascript_include_tag "/timecontrol/qinmiset.css" %>
+    <%= javascript_include_tag "jquery-1.7.2.min.js" %>
+    <%= javascript_include_tag "timecontrol/teamset.css" %>
+	</head>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			height: 600px;
+			position: relative;
+		}
+		ul{list-style: none;}
+		.team-1
+		{
+			float: left;
+			width: 370px;
+			height: 400px;
+			font-weight: 200;
+			color: black;
+			background-color: white;
+			opacity: 0.7;
+			margin-right: 0px;
+		}
+		.team-1 p{
+			padding: 10px;
+			font-size: 20px;
+			
+		}
+		.team-1:hover
+		{
+			float: left;
+			width: 670px;
+			height: 300px;
+			font-weight: 200;
+			color: black;
+			background-color: white;
+			opacity: 0.7;
+			margin-right: 30px;
+			transition: 2s;
+		}
+		.team-2
+		{
+			float: right;
+			width: 370px;
+			height: 400px;
+			font-weight: 200;
+			color: black;
+			background-color: white;
+			opacity: 0.7;
+			margin-top: 40px;
+			margin-right: 0px;
+		}
+		.team-2 p{
+			padding: 10px;
+			font-size: 25px;
+			
+		}
+		.team-2:hover{
+			float: right;
+			width: 670px;
+			height: 300px;
+			font-weight: 200;
+			color: black;
+			background-color: white;
+			opacity: 0.7;
+			margin-right: 30px;
+			transition: 2s;
+		}
+		.all
+		{
+			margin-top: 20px;
+			position:fixed; 
+			top:0px;
+			left:0px; 
+			bottom:0px;
+			width:100%;
+			height:100%;
+			opacity: 0.8;
+		}
+		li img
+		{
+			width: 70px;
+			height: 70px;
+		}
+		li{
+			width: 70px;
+			height: 70px;
+			overflow: hidden;
+			border-radius: 40px;
+			float: left;
+			margin: 10px;
+			position: relative;
+		}
+		li > .button1{
+			position: absolute;
+			width: 73px;
+			height: 73px;
+			border-radius: 40px;
+			top: 0px;
+			bottom: 0px;
+			margin: auto;
+			display: none;
+			background-color: #AFD9EE;
+			opacity: 0.5;
+		}
+		li:hover > .button1{
+			display: block;
+		}
+		.text{
+			width: 200px;
+			height: 200px;
+			border: 1px solid #2AABD2;
+			box-shadow: 0 0 10px #46B8DA;
+		}
+		.create-team
+		{
+			margin-top: 40px;
+			width: 370px;
+			height: 400px;
+			font-weight: 200;
+			color: black;
+			background-color: #5CB85C;
+			opacity: 0.7;
+			vertical-align: middle;
+			margin: auto;
+		}
+		.new-team
+		{
+			float: left;
+			width: 400px;
+			height: 300px;
+			font-weight: 200;
+			padding: 20px;
+			color: white;
+			background-color: #7ABA7B;
+			opacity: 0.9;
+			margin-left: 30px;
+			text-align: center;
+			vertical-align: middle;
+		}
+		.new-team p{
+			font-size: 30px;
+			color: white;
+			margin-bottom: 20px;
+		}
+		.new-team input{
+			width: 200px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		.jianjie
+		{
+			display: none;
+		}
+		.img-touxiang
+		{
+			width:70px;
+			height: 70px;
+			border-radius: 40px;
+			overflow: hidden;
+		}
+		.img-touxiang img
+		{
+			width: 70px;
+			height: 70px;
+		}
+	</style>
+	<body class="qinmi">
+		<img class="all" src="/assets/TimeControl/time-4.jpg" />
+		<div class="team-1">
+			<p>我创建的团队</p>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="/assets/TimeControl/famous-sayings1.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="/assets/TimeControl/famous-sayings1.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="/assets/TimeControl/famous-sayings1.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="/assets/TimeControl/famous-sayings1.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="/assets/TimeControl/famous-sayings1.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="/assets/TimeControl/famous-sayings1.jpg" />
+					</a>
+				</li>
+			</ul>
+			<p style="clear: both;"></p>
+			<div class="jianjie">
+				<p>团队名称：123</p>
+				<p>团队成员：杜伟静、常旭征、康孟海、倪增超、耿新杰</p>
+				<a href="#">查看共同空余时间</a>
+			</div>
+		</div>
+		<div class="new-team">
+			<p>创建团队</p>
+			<div class="img-touxiang">
+			    <img src="/assets/TimeControl/famous-sayings1.jpg" />
+			    <input type="file" value="上传头像" />
+			</div>
+			<span>团队名称：</span>
+			<input type="text" name="name" value="" placeholder="请输入团队名称" />
+			<br />
+			<span>添加成员个数：</span>
+			<input type="text" name="number" value="" placeholder="请输入团队人数" />
+			<br />
+			<!--<span>添加成员：</span>
+			<input type="text" name="member" value="" placeholder="添加成员的昵称" />-->
+			<input type="button" value="提交" />
+		</div>
+		<!--<div style="float: left;">
+			<img src="images/TimeControl/bome.png" />
+		</div>-->
+		<p style="clear: both;"></p>
+		<div class="team-2">
+			<p>我加入的团队</p>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="/assets/TimeControl/famous-sayings1.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="/assets/TimeControl/famous-sayings1.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="/assets/TimeControl/famous-sayings1.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="/assets/TimeControl/famous-sayings1.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="/assets/TimeControl/famous-sayings1.jpg" />
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="/assets/TimeControl/famous-sayings1.jpg" />
+					</a>
+				</li>
+			</ul>
+		</div>
+		<p style="clear: both;"></p>
+	</body>
+	<script>
+		$(".team-1").find("img").click(function(){
+			$(".jianjie").css("display",'block');
+		})
+	</script>
+</html>

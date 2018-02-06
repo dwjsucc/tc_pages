@@ -1,0 +1,2 @@
+module SearchpasswordsHelper
+end

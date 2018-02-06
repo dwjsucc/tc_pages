@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>绑定手机</title>
+    <!--<link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bangding.css">
+    <script type="text/javascript" src="./js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/jianplaceholder.js"></script>
+    <script type="text/javascript" src="./js/mobilenum.js"></script>
+    <script type="text/javascript" src="js/appjs/layout.js" ></script>
+    <!--<script type="text/javascript" src="js/appjs/Timetrans.js" ></script>-->
+   <!-- <script type="text/javascript" src="js/appjs/layout.js" ></script>
+    <script type="text/javascript" src="js/appjs/send.js" ></script>-->
+  
+    <%= stylesheet_link_tag "common" %>
+    <%= stylesheet_link_tag "bootstrap.min" %> 
+    <%= stylesheet_link_tag "index" %> 
+    <%= stylesheet_link_tag "bangding" %>
+    <%= javascript_include_tag "jquery-1.12.1.min" %>
+    <%= javascript_include_tag "bootstrap.min" %>
+    <%= javascript_include_tag "index" %>
+    <%= javascript_include_tag "jianplaceholder" %>
+    <%= javascript_include_tag "mobilenum.js" %>
+    <%= javascript_include_tag "appjs/layout.js" %>
+    <%= javascript_include_tag "appjs/layout.js" %>
+    <%= javascript_include_tag "appjs/send.js" %>
+
+</head>
+<body ng-app="bind" ng-controller="bindcontroller">
+    <div class="bangding">
+        <div class="shouji">绑定手机:</div>
+        <div class="bang">
+            <span>手机号码：</span>
+            <input type="text" placeholder="11位中国大陆手机号" id="mobilenum" ng-model="phone"/>
+        </div>
+        <div class="bang">
+            <span>短信验证码：</span>
+            <input type="text" placeholder="短信验证码" style="width: 240px" ng-model="codes"/>
+            <button id="obtainnum" ng-click="send()">获取验证码</button>
+        </div>
+        <button class="determine" ng-click="queding()">确定</button>
+    </div>
+</body>
+<!--<script type="text/javascript" src="js/appjs/layout.js" ></script>
+<!--<script type="text/javascript" src="js/appjs/Timetrans.js" ></script>-->
+<!--<script type="text/javascript" src="js/angular-1.5.8.js" ></script>
+<script type="text/javascript" src="js/appjs/send.js" ></script>-->-->
+</html>

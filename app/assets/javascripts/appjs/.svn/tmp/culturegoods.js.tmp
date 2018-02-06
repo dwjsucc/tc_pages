@@ -1,0 +1,99 @@
+
+//文化商城详情页
+
+var culdesapp = angular.module('culdes',['CommonApp']);
+culdesapp.controller('culdescontroller', function ($scope, $http, URLParam) {
+    var objid=URLParam.getParams();
+    $http({
+        url:wenhuaju+'/goods',
+        method:"POST",
+        params:{
+            'id':objid.id //12
+        }
+    }).success(function (response_culdes) {
+        $scope.goodsName = response_culdes.data;
+        $scope.goodsIntro = response_culdes.data;
+        $scope.minCurrentPrice = response_culdes.data;
+        $scope.coverImgUrl = response_culdes.data;
+        $scope.imageLists = response_culdes.data.imageList;
+        $scope.specificationLists = response_culdes.data.specificationList;
+
+        $scope.buy = function (id) {
+            var buy_Id = id;
+
+            $('.testBuy').attr('href','ticketBuy.html#'+$scope.goodsName.id+'#'+buy_Id);
+        };
+
+        //加载评论页数,后期需要修改
+        $http({
+            url:wenhuaju+'/goods/comment/list/count',
+            method:"POST",
+            params:{
+                'id':objid.id,  //12
+                'pageSize':5,
+//              'pageNumber':1
+            }
+        }).success(function (response) {
+            $scope.comments = response.data
+        });
+        //加载评论列表，后期需要修改
+        $http({
+            url:wenhuaju+'/goods/comment/list',
+            method:"POST",
+            params:{
+                'id':objid.id, //12
+                'pageSize':5,
+                'pageNumber':1
+            }
+        }).success(function (response_comment) {
+            $scope.comments = response_comment.data
+        })
+    })
+});
+
+//文化活动详情
+var culactivedesapp = angular.module('culactivedes',['CommonApp']);
+culactivedesapp.controller('culactivedescontroller', function ($scope, $http, URLParam) {
+    var objid=URLParam.getParams();
+    $http({
+        url:wenhuaju+'/activity',
+        method:"POST",
+        params:{
+            'id':objid.id //12
+        }
+    }).success(function (response_activedes) {
+        $scope.name = response_activedes.data;
+        $scope.intro = response_activedes.data;
+        $scope.coverImgUrl = response_activedes.data;
+        $scope.startTime = response_activedes.data;
+        $scope.endTime = response_activedes.data;
+        $scope.address = response_activedes.data;
+        $scope.detail = response_activedes.data.detail;
+        $scope.detailHtmlUrl = response_activedes.data;
+        //$('.artconImg').after($scope.detail);
+        //加载评论页数
+        $http({
+            url:wenhuaju+'/activity/comment/list/count',
+            method:"POST",
+            params:{
+                'id':objid.id,  //12
+                'pageSize':5,
+                'pageNumber':1
+            }
+        }).success(function (response) {
+            $scope.comments = response.data
+        });
+        //加载评论列表
+        $http({
+            url:wenhuaju+'/activity/comment/list',
+            method:"POST",
+            params:{
+                'id':objid.id, //12
+                'pageSize':5,
+                'pageNumber':1
+            }
+        }).success(function (response_comment) {
+            $scope.comments = response_comment.data
+        })
+    })
+});

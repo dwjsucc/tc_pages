@@ -1,0 +1,254 @@
+/**********���ֻ����һ�����************/
+
+.bangding{
+    width:660px;
+    font-size: 18px;
+    margin: auto;
+    margin-top:40px;
+    border:4px solid #DDDDDD;
+}
+.shouji{
+    width:656px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    border-bottom:4px solid #DDDDDD;
+}
+.bang{
+    width:460px;
+    height: 42px;
+    margin: auto;
+    margin-top:32px;
+}
+.bang span{
+    width: 110px;
+    height:42px;
+    display: block;
+    float: left;
+    line-height: 42px;
+}
+.bang input{
+    width:350px;
+    height:42px;
+    line-height: 42px;
+    border:1px solid #DDDDDD;
+    outline: none;
+    float: left;
+    padding: 0 6px;
+    font-size: 14px;
+}
+.bang button{
+    width:111px;
+    height:42px;
+    outline: none;
+    border:1px solid #DDDDDD;
+    margin-left: -1px;
+    color: #2BA6E1;
+    background: none;
+}
+.determine{
+    width: 400px;
+    height:50px;
+    background:#2BA6E1;
+    color: white;
+    font-size: 24px;
+    outline: none;
+    border:1px solid #2BA6E1;
+    margin:50px 30px 40px 130px;
+}
+/**********��¼��ע��************/
+.mylogin{
+    width: 100%;
+    height:100%;
+    min-height: 580px;
+    /*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+            src='images/loginbg.png',
+            sizingMethod='scale');*/
+    background: url("../images/TimeControl/lunbo1.png") no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+    margin-top: 60px;
+    /*background-size: cover;*/
+}
+.logininfo{
+    width:400px;
+    height:400px;
+    background:white;
+    float: right;
+    margin: 100px 100px 0 0;
+    border:4px solid #DDDDDD;
+}
+.login1{
+    height:40px;
+    border-bottom:4px solid #DDDDDD;
+    line-height: 40px;
+    padding: 0 14px;
+}
+.login1-left{
+    float: left;
+}
+.login1-right{
+    float:right;
+}
+.login1-right a{
+    color:#2BA6E1;
+}
+.login2-li{
+    width: 292px;
+    margin: auto;
+    margin-top:20px;
+    overflow: hidden;
+}
+.login2-li input{
+    margin-left:-8px;
+    width:250px;
+    height: 35px;
+    line-height: 35px;
+    border:1px solid #DDDDDD;
+    outline: none;
+    margin-top: -1px;
+    padding-left: 10px;
+}
+.login2-li label img,.login2-li label input{
+    vertical-align: middle;
+}
+.login2-li button,.registinfobtn button{
+    width:290px;
+    height: 36px;
+    background:#2BA6E1;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    border:1px solid #2BA6E1;
+}
+.login2-li-div{
+    width:105px;
+    float: left;
+    font-size: 12px;
+    cursor: pointer;
+}
+.login2-li-div-zai{
+    width: 80px;
+}
+.login2-li a{
+    color: black;
+    text-decoration: none;
+}
+.convenient{
+    width:80px;
+    float: left;
+    cursor: pointer;
+}
+.forget{
+    width:80px;
+    float: right;
+    margin-right: -8px;
+    cursor: pointer;
+}
+.myregist{
+    width:400px;
+    height:550px;
+    background:white;
+    float: right;
+    margin:30px 100px 0 0;
+    border:4px solid #DDDDDD;
+}
+.registtitle{
+    border-bottom: 4px solid #DDDDDD;
+    height:40px;
+    line-height: 40px;
+    padding-left:14px;
+}
+.registsort{
+    width:290px;
+    margin:auto;
+    margin-top:15px;
+}
+.registsort button{
+    width: 130px;
+    height:30px;
+    outline: none;
+    color:white;
+}
+#peopleregist{
+    background: #2BA6E1;
+    border:1px solid #2BA6E1;
+}
+#companyregist{
+    background:#DDDDDD;
+    border:1px solid #DDDDDD;
+}
+.registinfo li{
+    width: 290px;
+    margin:10px auto;
+}
+.registinfoitem span{
+    width:90px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    font-size: 16px;
+}
+.registinfoitem input{
+    width:200px;
+    height: 30px;
+    line-height: 30px;
+    border:1px solid #DDDDDD;
+    outline: none;
+    padding-left:10px;
+}
+.registinfosex label{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.registinfosex input{
+    width:14px;
+    height:14px;
+    margin-right:10px;
+}
+.registinfoedu select,.registinfocity select{
+    width: 200px;
+    height: 30px;
+    margin-left: -5px;
+    outline: none;
+    padding-left: 8px;
+    border:1px solid #DDDDDD;
+    /*line-height: 30px;*/
+    cursor: pointer;
+}
+.registinfogray input{
+    background: #DDDDDD;
+    border:1px solid #DDDDDD;
+    color: white;
+}
+.registinfogray input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color:white;
+}
+.registinfogray input:-moz-placeholder, textarea:-moz-placeholder {
+    color:white;
+}
+.registinfogray input::-moz-placeholder, textarea::-moz-placeholder {
+    color:white;
+    }
+.registinfogray input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color:white;
+}
+.registinfobtn button{
+    margin-top:10px;
+    height:32px;
+}
+.registmob input{
+    width: 120px;
+}
+.registmob button{
+    width:80px;
+    height: 30px;
+    margin-left: -7px;
+    border:1px solid #2BA6E1;
+    background: #2BA6E1;
+    color: white;
+    outline: none;
+}
+.companyzhu{
+    display: none;
+}

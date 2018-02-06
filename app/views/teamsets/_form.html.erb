@@ -1,0 +1,17 @@
+<%= form_for(@teamset) do |f| %>
+  <% if @teamset.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@teamset.errors.count, "error") %> prohibited this teamset from being saved:</h2>
+
+      <ul>
+      <% @teamset.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

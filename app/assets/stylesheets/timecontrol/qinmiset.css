@@ -1,0 +1,105 @@
+body,P,ul{margin:0;padding:0;}
+a{text-decoration: none;}
+/*相册轮播*/
+.box-1{        /*外层盒子的样式定义*/
+		width:704px;
+		height:400px;
+		border:1px solid black;
+		margin:auto;
+		margin-top:20px;
+		border-radius:10px;
+		box-shadow:0 0 10px #ccccff;
+		background-color:#C4E3F3;
+	}
+.process li{            /*li标签的定义*/
+	border:1px solid #ccccff;
+	overflow:hidden;
+	float:left;
+}
+.li-1{        /*第一张大图的样式定义*/
+	width:470px;
+	height:350px;
+	margin:20px 20px 20px 20px;
+	border-radius:10px;
+	box-shadow:0 0 10px #ccccff;
+}
+.img-1{
+	margin-top: -29px;
+	width:470px;
+	height:350px;
+}
+.li-2{       /*小图的li定义*/
+	width:84px;
+	height:54px;
+	background-color:#ffffff;
+	margin-top:20px;
+	margin-right:10px;
+}
+.img-2{     /*小图的图片定义*/
+	width:80px;
+	height:50px;
+	margin-top:2px;
+	margin-left:2px;
+	cursor: pointer;
+}
+.qinmi{
+		margin-left: 6%;
+		margin-right: 6%;
+		margin-top: 40px;
+	}
+.search{
+		display: inline-block;
+}
+table td{
+		width:100px;
+		max-width: 100px;
+		font-size: 18px;
+}
+.ability{
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color:#31B0D5;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.ability + p{
+	font-family: "微软雅黑";
+	font-size: 15px;
+	color:black;
+	margin-bottom: 20px;
+}
+li{
+	line-height: 30px;
+	font-size: 15px;
+}
+.input-1{
+	margin-top: 40px;
+	margin-bottom:40px;
+}
+.input-1 p{
+	font-size: 20px;
+	color: #2AABD2;
+}
+.titie-table
+{
+	text-align: center;
+	background-color:#356635;
+	color: white;
+}
+.but-search{
+	width:90px;
+	line-height: 23px;
+	background-color: #31B0D5;
+	color: white;
+	border:1px solid white;
+}
+.right
+{
+	float:left;
+	width:350px;
+	margin-left: 40px;
+}
+.left{
+	float:left;
+}
+
